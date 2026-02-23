@@ -5,13 +5,13 @@ const STYLES = {
     border: "border-emerald-700",
     bg: "bg-emerald-950/40",
     text: "text-emerald-300",
-    icon: "✓",
+    icon: "",
   },
   error: {
     border: "border-red-700",
     bg: "bg-red-950/40",
     text: "text-red-300",
-    icon: "✗",
+    icon: "",
   },
   info: {
     border: "border-blue-700",
@@ -35,7 +35,7 @@ export default function FeedbackOverlay({ type = "info", message, onDismiss }) {
           onClick={onDismiss}
           className="text-slate-500 hover:text-white text-xs"
         >
-          ✕
+          
         </button>
       )}
     </div>

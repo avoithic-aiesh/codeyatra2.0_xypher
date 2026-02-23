@@ -24,7 +24,7 @@ export default function SimulationDetailPage() {
   if (!SimComponent) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 px-6 text-center">
-        <div className="w-14 h-14 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-2xl">🔬</div>
+        <div className="w-14 h-14 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-2xl"></div>
         <p className="text-red-600 font-bold text-lg">Unknown simulation type</p>
         <button
           onClick={() => navigate("/simulations")}

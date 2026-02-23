@@ -162,7 +162,7 @@ export default function AccountPage() {
                     </span>
                   )}
                   {subject === s.value && s.available && (
-                    <span className="text-amber-brand text-xs">✓</span>
+                    <span className="text-amber-brand text-xs"></span>
                   )}
                 </button>
               ))}
@@ -174,7 +174,7 @@ export default function AccountPage() {
             disabled={saving}
             className="w-full rounded-xl bg-amber-brand hover:bg-amber-hover active:scale-95 py-2.5 font-semibold text-text-primary transition-all disabled:opacity-60"
           >
-            {saved ? "✓ Saved!" : saving ? "Saving…" : "Save Changes"}
+            {saved ? " Saved!" : saving ? "Saving…" : "Save Changes"}
           </button>
         </form>
       </div>

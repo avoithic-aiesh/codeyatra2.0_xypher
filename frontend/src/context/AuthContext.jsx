@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
     else localStorage.removeItem(TOKEN_KEY);
   }, [token]);
 
-  // ── helpers ──────────────────────────────────────────────────────────────
+  //  helpers 
 
   /** Fetch wrapper that attaches Authorization header automatically */
   function authFetch(url, options = {}) {
@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
     });
   }
 
-  // ── auth actions ─────────────────────────────────────────────────────────
+  //  auth actions 
 
   /** POST /api/auth/register */
   async function signup({ name, email, password }) {

@@ -151,7 +151,7 @@ export default function PathfinderPage() {
   );
 }
 
-/* ───────────────────── Roadmap Visualization ───────────────────── */
+/*  Roadmap Visualization  */
 
 function RoadmapTree({ path, onDiagnose }) {
   const allNodes = path.prerequisite_chain || [];
@@ -274,7 +274,7 @@ function RoadmapTree({ path, onDiagnose }) {
               <div className="flex flex-col items-center py-2">
                 <div className="w-0.5 h-5 bg-gradient-to-b from-gray-300 to-gray-200 rounded-full" />
                 <div className="w-6 h-6 rounded-full bg-cream-200 border-2 border-gray-300 flex items-center justify-center">
-                  <span className="text-text-muted text-[10px]">▼</span>
+                  <span className="text-text-muted text-[10px]"></span>
                 </div>
                 <div className="w-0.5 h-5 bg-gradient-to-b from-gray-200 to-gray-300 rounded-full" />
               </div>

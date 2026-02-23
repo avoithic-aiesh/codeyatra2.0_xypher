@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useState, useEffect } from "react";
 
-/* ─── Subject colour helpers ─── */
+/*  Subject colour helpers  */
 const SUBJECT_COLORS = {
   physics: "border-amber-brand/30 text-amber-brand bg-amber-brand/5",
   math: "border-emerald-300 text-emerald-600 bg-emerald-50",
@@ -42,7 +42,7 @@ const FEATURE_ICONS = {
   ),
 };
 
-/* ─── Landing page for guests ─── */
+/*  Landing page for guests  */
 const FEATURES = [
   {
     iconKey: "diagnose",
@@ -76,7 +76,7 @@ const STATS = [
 function LandingPage() {
   return (
     <div className="overflow-x-hidden">
-      {/* ══════════ HERO ══════════ */}
+      {/*  HERO  */}
       <section className="relative overflow-hidden">
         {/* background decoration */}
         <div className="pointer-events-none absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-amber-brand/8 blur-3xl" />
@@ -169,7 +169,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* ══════════ STATS STRIP ══════════ */}
+      {/*  STATS STRIP  */}
       <section className="border-y border-gray-200 bg-white py-10 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {STATS.map((s) => (
@@ -181,7 +181,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* ══════════ HOW IT WORKS ══════════ */}
+      {/*  HOW IT WORKS  */}
       <section className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-14">
           <h2 className="text-3xl font-extrabold text-text-primary">
@@ -208,7 +208,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* ══════════ FEATURES ══════════ */}
+      {/*  FEATURES  */}
       <section className="bg-white border-y border-gray-200 py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
@@ -233,7 +233,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* ══════════ SUBJECTS ══════════ */}
+      {/*  SUBJECTS  */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
         <h2 className="text-3xl font-extrabold text-text-primary mb-3">
           One platform. Every subject.
@@ -250,7 +250,7 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* ══════════ CTA BANNER ══════════ */}
+      {/*  CTA BANNER  */}
       <section className="mx-6 mb-20 rounded-3xl bg-gradient-to-br from-amber-brand to-amber-hover p-12 text-center text-white max-w-4xl xl:mx-auto">
         <h2 className="text-3xl font-extrabold mb-3">
           Your next breakthrough is one session away.
@@ -345,7 +345,7 @@ export default function HomePage() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-10">
-      {/* ═══ Welcome Header ═══ */}
+      {/*  Welcome Header  */}
       <div className="flex items-start justify-between mb-8">
         <div className="flex items-center gap-4">
           {/* Avatar */}
@@ -382,7 +382,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ═══ Quick Actions ═══ */}
+      {/*  Quick Actions  */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
         {[
           { to: "/diagnose", iconKey: "diagnose", label: "Run Diagnosis", desc: "Find your gaps" },
@@ -402,7 +402,7 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* ═══ Your Subjects ═══ */}
+      {/*  Your Subjects  */}
       <div className="flex items-center gap-3 mb-8 flex-wrap">
         <span className="text-sm font-semibold text-text-secondary">Your Subjects:</span>
         {subjects.map((s) => (
@@ -430,7 +430,7 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* ═══ Recently Viewed ═══ */}
+      {/*  Recently Viewed  */}
       {recentConcepts.length > 0 && (
         <section className="mb-10">
           <h2 className="flex items-center gap-2 text-lg font-bold text-text-primary mb-4">
@@ -465,7 +465,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* ═══ Explore More Topics ═══ */}
+      {/*  Explore More Topics  */}
       <section>
         <h2 className="text-xl font-extrabold text-text-primary mb-6">
           Explore More Topics

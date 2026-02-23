@@ -11,7 +11,7 @@ export default function SimulationContainer({ title, children, className = "" })
     >
       {/* Header */}
       <div className="border-b border-slate-800 px-6 py-4 flex items-center gap-3">
-        <span className="text-xl">🧪</span>
+        <span className="text-xl"></span>
         <h2 className="text-lg font-bold text-white">{title}</h2>
       </div>
 

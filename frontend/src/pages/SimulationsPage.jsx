@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 const SIM_META = {
-  vector_decomposition: { icon: "🧭", color: "indigo", label: "Physics" },
-  function_graphing:    { icon: "📈", color: "emerald", label: "Mathematics" },
-  molecular_structure:  { icon: "🧪", color: "rose", label: "Chemistry" },
+  vector_decomposition: { icon: "", color: "indigo", label: "Physics" },
+  function_graphing:    { icon: "", color: "emerald", label: "Mathematics" },
+  molecular_structure:  { icon: "", color: "rose", label: "Chemistry" },
 };
 
 const routePrefix = {
@@ -39,7 +39,7 @@ export default function SimulationsPage() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {sims.map((sim) => {
-          const meta = SIM_META[sim.simulation_type] || { icon: "🔬", color: "gray", label: "Simulation" };
+          const meta = SIM_META[sim.simulation_type] || { icon: "", color: "gray", label: "Simulation" };
           const to = routePrefix[sim.simulation_type]
             ? `${routePrefix[sim.simulation_type]}${sim.concept_id}`
             : "#";

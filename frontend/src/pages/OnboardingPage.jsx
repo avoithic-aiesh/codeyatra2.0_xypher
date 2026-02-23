@@ -155,7 +155,7 @@ export default function OnboardingPage() {
 
       <div className="w-full max-w-lg">
 
-        {/* ── Step 1 — Class ── */}
+        {/*  Step 1 — Class  */}
         {step === 1 && (
           <div>
             <div className="text-center mb-8">
@@ -219,7 +219,7 @@ export default function OnboardingPage() {
           </div>
         )}
 
-        {/* ── Step 2 — Subject ── */}
+        {/*  Step 2 — Subject  */}
         {step === 2 && (
           <div>
             <div className="text-center mb-8">
